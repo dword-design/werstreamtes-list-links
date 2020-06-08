@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.0...v1.0.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* add extension id ([386e2dd](https://github.com/dword-design/werstreamtes-list-links/commit/386e2dd22ffc004152efd5b3582e09f21c32f6d7))
+
 # 1.0.0 (2020-06-08)
 
 

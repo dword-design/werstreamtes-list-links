@@ -1,6 +1,6 @@
 {
   "name": "@dword-design/werstreamtes-list-links",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verlinkt Listen auf WerStreamt.es standardmäßig auf die Übersichtsseiten und fügt Links zu den Bearbeiten-Seiten hinzu.",
   "repository": "dword-design/werstreamtes-list-links",
   "license": "MIT",
