@@ -1,9 +1,9 @@
 <!-- TITLE/ -->
-# undefined
+# @dword-design/werstreamtes-list-links
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-[![NPM version](https://img.shields.io/npm/v/undefined.svg)](https://npmjs.org/package/undefined)
+[![NPM version](https://img.shields.io/npm/v/@dword-design/werstreamtes-list-links.svg)](https://npmjs.org/package/@dword-design/werstreamtes-list-links)
 ![Linux macOS Windows compatible](https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue)
 [![Build status](https://img.shields.io/github/workflow/status/dword-design/werstreamtes-list-links/build)](https://github.com/dword-design/werstreamtes-list-links/actions)
 [![Coverage status](https://img.shields.io/coveralls/dword-design/werstreamtes-list-links)](https://coveralls.io/github/dword-design/werstreamtes-list-links)
@@ -22,10 +22,10 @@ Verlinkt Listen auf WerStreamt.es standardmäßig auf die Übersichtsseiten und 
 
 ```bash
 # NPM
-$ npm install undefined
+$ npm install @dword-design/werstreamtes-list-links
 
 # Yarn
-$ yarn add undefined
+$ yarn add @dword-design/werstreamtes-list-links
 ```
 <!-- /INSTALL -->
 
