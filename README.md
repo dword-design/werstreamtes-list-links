@@ -14,7 +14,7 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-
+Verlinkt Listen auf WerStreamt.es standardmäßig auf die Übersichtsseiten und fügt Links zu den Bearbeiten-Seiten hinzu.
 <!-- /DESCRIPTION -->
 
 <!-- INSTALL/ -->
