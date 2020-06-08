@@ -29,6 +29,7 @@
   },
   "baseConfig": {
     "name": "web-extension",
-    "startUrl": "https://www.werstreamt.es/filme-serien/liste-411079"
+    "startUrl": "https://www.werstreamt.es/filme-serien/liste-411079",
+    "chromeExtensionId": "fjmcbhanepcclaikmmmpaccaahlcchal"
   }
 }
