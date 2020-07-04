@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.1...v1.0.2) (2020-07-04)
+
+
+### Bug Fixes
+
+* **config:** Update changed files ([4dd5077](https://github.com/dword-design/werstreamtes-list-links/commit/4dd507703f417ebee0f1722f783ab807e5d69a0e))
+
 ## [1.0.1](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.0...v1.0.1) (2020-06-08)
 
 
