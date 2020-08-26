@@ -5,13 +5,14 @@
   "repository": "dword-design/werstreamtes-list-links",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
-  "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
+    "clean": "base clean",
     "commit": "base commit",
     "dev": "base dev",
+    "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
     "source": "base source",
@@ -28,7 +29,7 @@
     "access": "public"
   },
   "baseConfig": {
-    "name": "web-extension",
+    "name": "@dword-design/web-extension",
     "startUrl": "https://www.werstreamt.es/filme-serien/liste-411079",
     "chromeExtensionId": "fjmcbhanepcclaikmmmpaccaahlcchal"
   }
