@@ -1,12 +1,12 @@
 import { endent, last } from '@dword-design/functions'
-import { SLUG } from './variables.config'
+
 import frontViewRegex from './front-view-regex'
+import { SLUG } from './variables.config'
 
 export default () => {
   const match = window.location.pathname.match(frontViewRegex)
   if (match) {
     const $heading = document.querySelector('h1')
-
     let $edit = document.querySelector(`.${SLUG}-edit`)
     if ($edit) {
       $edit.remove()

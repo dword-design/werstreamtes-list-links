@@ -1,12 +1,12 @@
 import { endent, last } from '@dword-design/functions'
-import { SLUG } from './variables.config'
+
 import editViewRegex from './edit-view-regex'
+import { SLUG } from './variables.config'
 
 export default () => {
   const match = window.location.pathname.match(editViewRegex)
   if (match) {
     const $heading = document.querySelector('h1')
-
     let $view = document.querySelector(`.${SLUG}-view`)
     if ($view) {
       $view.remove()
