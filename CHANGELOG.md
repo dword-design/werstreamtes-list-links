@@ -3,6 +3,15 @@
 
 ### Bug Fixes
 
+* add icon ([00000a4](https://github.com/dword-design/werstreamtes-list-links/commit/00000a4ad40bd64954b06386296ebfee1872892b))
+* remove icon ([ddb34fc](https://github.com/dword-design/werstreamtes-list-links/commit/ddb34fc3e9e4333a29cd06e316c8ea8bc35d551d))
+* upgrades ([61e6077](https://github.com/dword-design/werstreamtes-list-links/commit/61e607732ee5bfc0c4aedece5160eb568dd773c0))
+
+## [1.0.5](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.4...v1.0.5) (2021-02-17)
+
+
+### Bug Fixes
+
 * upgrades ([61e6077](https://github.com/dword-design/werstreamtes-list-links/commit/61e607732ee5bfc0c4aedece5160eb568dd773c0))
 
 ## [1.0.4](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.3...v1.0.4) (2020-12-11)
