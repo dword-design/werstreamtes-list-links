@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.4...v1.0.5) (2021-02-17)
+
+
+### Bug Fixes
+
+* upgrades ([61e6077](https://github.com/dword-design/werstreamtes-list-links/commit/61e607732ee5bfc0c4aedece5160eb568dd773c0))
+
 ## [1.0.4](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.3...v1.0.4) (2020-12-11)
 
 
