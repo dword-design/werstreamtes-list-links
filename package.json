@@ -3,6 +3,7 @@
   "version": "1.0.6",
   "description": "Verlinkt Listen auf WerStreamt.es standardmäßig auf die Übersichtsseiten und fügt Links zu den Bearbeiten-Seiten hinzu.",
   "repository": "dword-design/werstreamtes-list-links",
+  "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "files": [
