@@ -16,11 +16,14 @@ export default () => {
     )
     $listLinks.forEach($link => {
       const href = $link.getAttribute('href')
+
       const match = href.match(editViewRegex)
       $link.setAttribute('href', `/filme-serien/liste-${match |> last}`)
     })
   }
+
   const observer = new MutationObserver(run)
+
   const $topBar = document.querySelector('.top-bar')
   observer.observe($topBar, { childList: true })
   run()
