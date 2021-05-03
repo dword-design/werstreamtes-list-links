@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.11...v1.0.12) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#21](https://github.com/dword-design/werstreamtes-list-links/issues/21)) ([7675b31](https://github.com/dword-design/werstreamtes-list-links/commit/7675b31ce11e6698eb056dee69357c7d814c5c2a))
+
 ## [1.0.11](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.10...v1.0.11) (2021-04-12)
 
 
