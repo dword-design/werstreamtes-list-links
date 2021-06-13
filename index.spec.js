@@ -18,6 +18,7 @@ export default tester(
       if (cookieButton) {
         await cookieButton.click()
       }
+      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await loginLink.click()
       await this.page.waitForNavigation()
       await this.page.type('input[type=email]', process.env.USER_EMAIL)
