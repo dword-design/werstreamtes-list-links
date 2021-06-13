@@ -11,10 +11,6 @@ export default tester(
     async works() {
       await this.page.goto('https://werstreamt.es')
 
-      /* const acceptCookiesButton = await this.page.waitForSelector(
-        '.cmpboxbtnyes'
-      )
-      await acceptCookiesButton.click() */
       const loginLink = await this.page.waitForSelector('li.login a')
       await loginLink.click()
       await this.page.waitForNavigation()
