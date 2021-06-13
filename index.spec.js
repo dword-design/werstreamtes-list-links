@@ -19,14 +19,11 @@ export default tester(
       if (cookieButton) {
         await cookieButton.click()
       }
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await loginLink.click()
       await this.page.waitForNavigation()
       await this.page.type('input[type=email]', process.env.USER_EMAIL)
       await this.page.type('input[type=password]', process.env.USER_PASSWORD)
       await this.page.click('input[name=action_dologin]')
-      await delay(2000)
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const watchlistLink = await this.page.waitForXPath(
         "//a[text()='Watchlist']"
