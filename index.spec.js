@@ -13,7 +13,7 @@ export default tester(
       await this.page.goto('https://werstreamt.es')
 
       const loginLink = await this.page.waitForSelector('li.login a')
-
+      await delay(1000)
       const cookieButton = await this.page.$('.cmpboxbtnyes')
       if (cookieButton) {
         await cookieButton.click()
