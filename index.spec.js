@@ -1,4 +1,5 @@
 import dotenv from '@dword-design/dotenv-json-extended'
+import { delay } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import execa from 'execa'
@@ -22,6 +23,8 @@ export default tester(
       await this.page.type('input[type=email]', process.env.USER_EMAIL)
       await this.page.type('input[type=password]', process.env.USER_PASSWORD)
       await this.page.click('input[name=action_dologin]')
+      await delay(2000)
+      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const watchlistLink = await this.page.waitForXPath(
         "//a[text()='Watchlist']"
@@ -34,7 +37,6 @@ export default tester(
       await listsDropdown.hover()
       await watchlistLink.click()
       await this.page.waitForNavigation()
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const editButton = await this.page.waitForSelector(
         '.werstreamtes-list-links-edit'
