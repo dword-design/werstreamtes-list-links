@@ -43,12 +43,14 @@ export default tester(
       expect(await this.page.url()).toEqual(
         'https://www.werstreamt.es/filme-serien/liste-604612/'
       )
+      await this.page.waitForSelector("a[href='/profil/']")
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await editButton.click()
       await this.page.waitForNavigation()
       expect(await this.page.url()).toEqual(
         'https://www.werstreamt.es/listen/bearbeiten/604612'
       )
+      await this.page.waitForSelector("a[href='/profil/']")
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       expect(
         await this.page.$eval('.werstreamtes-list-links-view', el => el.href)
