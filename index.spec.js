@@ -34,6 +34,7 @@ export default tester(
       await listsDropdown.hover()
       await watchlistLink.click()
       await this.page.waitForNavigation()
+      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const editButton = await this.page.waitForSelector(
         '.werstreamtes-list-links-edit'
