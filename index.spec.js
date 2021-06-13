@@ -12,6 +12,11 @@ export default tester(
       await this.page.goto('https://werstreamt.es')
 
       const loginLink = await this.page.waitForSelector('li.login a')
+
+      const cookieButton = await this.page.$('.cmpboxbtnyes')
+      if (cookieButton) {
+        await cookieButton.click()
+      }
       await loginLink.click()
       await this.page.waitForNavigation()
       await this.page.type('input[type=email]', process.env.USER_EMAIL)
