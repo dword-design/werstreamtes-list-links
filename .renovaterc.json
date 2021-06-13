@@ -14,7 +14,8 @@
   "packageRules": [
     {
       "matchPaths": [
-        "package.json"
+        "package.json",
+        "yarn.lock"
       ],
       "semanticCommitType": "fix"
     }
