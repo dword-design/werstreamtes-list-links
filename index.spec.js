@@ -44,6 +44,9 @@ export default tester(
         'https://www.werstreamt.es/filme-serien/liste-604612/'
       )
       await this.page.waitForSelector("a[href='/profil/']")
+      await this.page.$$eval('.results img', images =>
+        images.forEach(image => image.removeAttribute('src'))
+      )
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await editButton.click()
       await this.page.waitForNavigation()
