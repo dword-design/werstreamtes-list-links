@@ -54,6 +54,9 @@ export default tester(
         'https://www.werstreamt.es/listen/bearbeiten/604612'
       )
       await this.page.waitForSelector("a[href='/profil/']")
+      await this.page.$$eval('.customList img', images =>
+        images.forEach(image => image.removeAttribute('src'))
+      )
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       expect(
         await this.page.$eval('.werstreamtes-list-links-view', el => el.href)
