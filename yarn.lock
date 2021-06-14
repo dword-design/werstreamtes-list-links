@@ -1164,12 +1164,12 @@
     "@babel/preset-env" "^7.6.3"
     "@babel/preset-typescript" "^7.13.0"
     "@dword-design/functions" "^4.0.0"
-    "@vue/babel-preset-jsx" dword-design/jsx#fork-babel-preset-jsx
+    "@vue/babel-preset-jsx" "github:dword-design/jsx#fork-babel-preset-jsx"
     babel-plugin-add-module-exports "^1.0.2"
     babel-plugin-macros "^3.0.1"
     babel-plugin-module-resolver "^4.0.0"
     babel-plugin-transform-imports "^2.0.0"
-    babel-plugin-wildcard dword-design/babel-plugin-wildcard#fork
+    babel-plugin-wildcard "github:dword-design/babel-plugin-wildcard#fork"
     depcheck-package-name "^2.0.0"
     find-up "^5.0.0"
     param-case "^3.0.3"
@@ -1193,9 +1193,9 @@
     std-env "^2.3.0"
 
 "@dword-design/base-config-web-extension@^1.8.0":
-  version "1.10.29"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-web-extension/-/base-config-web-extension-1.10.29.tgz#c0152ff5a3a6cf725dc78d4a4e9b58f4fa98b503"
-  integrity sha512-LC8GXr4AHeCnRdUve1JLCUDhCJ2MkyH30EqOev3Bc/rpZHBpnpaV5GvInHfUFk2Jc4lgeshHN/nM85hFs1Q5Og==
+  version "1.10.30"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-web-extension/-/base-config-web-extension-1.10.30.tgz#dab34325868a9369be1bff15007e7b75eeaf3036"
+  integrity sha512-hX85Q0+Ji50SJ1APb/e/g84VHM5TaW4yBJEWvWIWCzHFpyg44U50PxBLBBdeDQa93u3/4WlkqpJpuA5zjsARTw==
   dependencies:
     "@dword-design/depcheck-parser-sass" "^2.0.0"
     "@dword-design/eslint-config" "^2.0.0"
@@ -1212,8 +1212,8 @@
     node-sass "^6.0.0"
     raw-loader "^4.0.1"
     sass-loader "^12.0.0"
-    semantic-release-chrome dword-design/semantic-release-chrome#fork
-    webext-webpack-plugin dword-design/webext-webpack-plugin#fork
+    semantic-release-chrome "github:dword-design/semantic-release-chrome#fork"
+    webext-webpack-plugin "^0.0.11"
     webextension-polyfill "^0.8.0"
     webpack "^5.33.2"
     webpack-cli "^4.0.0"
@@ -1348,7 +1348,7 @@
   integrity sha512-pIUXdHeV5G4dKwTcAhJcz8hV3B+IxYUBCpoyeYVhTVjidoJ7zxNnpe7fuLQ+yprdzFHllLlnlhixtVLXZY/cGA==
   dependencies:
     delay "^5.0.0"
-    endent dword-design/endent#fork
+    endent "github:dword-design/endent#fork"
     lodash "^4.17.15"
     tinycolor2 "^1.4.1"
 
@@ -1364,7 +1364,7 @@
   resolved "https://registry.yarnpkg.com/@dword-design/tester-plugin-puppeteer/-/tester-plugin-puppeteer-2.1.15.tgz#256f905df12d2bceccfeb103c33a51926e48886a"
   integrity sha512-IaIlcjeA8/G+Iif0UhFxDmjPRSTcdj7z9Ei4t82tNBDcZCd6VYwaqLVdTEEjipq3puxjnkojcRIQIF5yIwVglA==
   dependencies:
-    puppeteer-to-istanbul dword-design/puppeteer-to-istanbul#fork
+    puppeteer-to-istanbul "github:dword-design/puppeteer-to-istanbul#fork"
 
 "@dword-design/tester@^2.0.4":
   version "2.0.4"
@@ -1634,9 +1634,9 @@
     "@octokit/types" "^6.0.3"
 
 "@octokit/core@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.5.0.tgz#1bb341db7d1c666364d2fd8580576694c9ab5e54"
-  integrity sha512-IKcyllVQe6KPwPPFIaKdbhNNQhmmHIj69PXOseBF6/NglXoKHVe79syEfZj0bz7sP87MOl5jLZadV3slgdZ1vQ==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.5.1.tgz#8601ceeb1ec0e1b1b8217b960a413ed8e947809b"
+  integrity sha512-omncwpLVxMP+GLpLPgeGJBF6IWJFjXDS5flY5VbppePYX9XehevbDykRH9PdCdvqt9TS5AOTiDide7h0qrkHjw==
   dependencies:
     "@octokit/auth-token" "^2.4.4"
     "@octokit/graphql" "^4.5.8"
@@ -2022,6 +2022,7 @@
 
 "@vue/babel-preset-jsx@github:dword-design/jsx#fork-babel-preset-jsx":
   version "1.1.2"
+  uid a73cb9961541a60a66b1b99a69a32e00bc66d336
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/a73cb9961541a60a66b1b99a69a32e00bc66d336"
   dependencies:
     "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
@@ -2040,6 +2041,7 @@
 
 "@vue/babel-sugar-inject-h@dword-design/jsx#fork-babel-sugar-inject-h":
   version "1.1.2"
+  uid cc36a2200c059120f37944615fb2ec0e22f8f3cc
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/cc36a2200c059120f37944615fb2ec0e22f8f3cc"
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.2.0"
@@ -2877,6 +2879,7 @@ babel-plugin-transform-imports@^2.0.0:
 
 "babel-plugin-wildcard@github:dword-design/babel-plugin-wildcard#fork":
   version "6.0.0"
+  uid "691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   resolved "https://codeload.github.com/dword-design/babel-plugin-wildcard/tar.gz/691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   dependencies:
     rimraf "^2.6.2"
@@ -4091,6 +4094,7 @@ decompress-response@^3.3.0:
 
 dedent@0.7.0, dedent@dword-design/dedent#fork:
   version "0.7.0"
+  uid c8d46e5017d60504657c2d01b59082c0329a12a7
   resolved "https://codeload.github.com/dword-design/dedent/tar.gz/c8d46e5017d60504657c2d01b59082c0329a12a7"
   dependencies:
     babel-plugin-add-module-exports "^1.0.2"
@@ -4502,8 +4506,9 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0, end-of-stream@^1.4.1, end-of-stream@
   dependencies:
     once "^1.4.0"
 
-endent@dword-design/endent#fork:
+"endent@github:dword-design/endent#fork":
   version "1.4.0"
+  uid be5433db67eaec07c6c9d00ba3bed2ed946dc664
   resolved "https://codeload.github.com/dword-design/endent/tar.gz/be5433db67eaec07c6c9d00ba3bed2ed946dc664"
   dependencies:
     dedent dword-design/dedent#fork
@@ -9870,8 +9875,9 @@ pupa@^2.1.1:
   dependencies:
     escape-goat "^2.0.0"
 
-puppeteer-to-istanbul@dword-design/puppeteer-to-istanbul#fork:
+"puppeteer-to-istanbul@github:dword-design/puppeteer-to-istanbul#fork":
   version "1.4.0"
+  uid bf9e82538230872bffe68b28c40ec70731afd89a
   resolved "https://codeload.github.com/dword-design/puppeteer-to-istanbul/tar.gz/bf9e82538230872bffe68b28c40ec70731afd89a"
   dependencies:
     clone "^2.1.2"
@@ -10578,6 +10584,7 @@ scss-tokenizer@^0.2.3:
 
 "semantic-release-chrome@github:dword-design/semantic-release-chrome#fork":
   version "0.0.0-development"
+  uid e7c5f0a41cf64b6d72c440ae9ac70c3ca216541e
   resolved "https://codeload.github.com/dword-design/semantic-release-chrome/tar.gz/e7c5f0a41cf64b6d72c440ae9ac70c3ca216541e"
   dependencies:
     "@semantic-release/error" "2.2.0"
@@ -12086,9 +12093,10 @@ web-ext@^6.0.0:
     yargs "16.2.0"
     zip-dir "2.0.0"
 
-"webext-webpack-plugin@github:dword-design/webext-webpack-plugin#fork":
-  version "0.0.10"
-  resolved "https://codeload.github.com/dword-design/webext-webpack-plugin/tar.gz/ec73c68230f5ed3b55821b08858f61c4e8383ece"
+webext-webpack-plugin@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/webext-webpack-plugin/-/webext-webpack-plugin-0.0.11.tgz#8ec50b13aaa3875079e9655499c34ca3da8893c8"
+  integrity sha512-NK0a/QOFIQX4UyIdyjUnOcGN6bvbaPhhDhkaFkJq2uodk9DFt4hGQtKYJmYOFob+32Z6tTgVGf0r6lbheiSt+g==
   dependencies:
     web-ext "^6.0.0"
 
