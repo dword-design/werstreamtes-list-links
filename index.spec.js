@@ -43,7 +43,7 @@ export default tester(
       expect(await this.page.url()).toEqual(
         'https://www.werstreamt.es/filme-serien/liste-604612/'
       )
-      await this.page.waitForSelector("a[href='/profil/']")
+      await this.page.waitForXPath("//a[@href='/profil/'][text()=' Account']")
       await this.page.$$eval('.results img', images =>
         images.forEach(image => image.removeAttribute('src'))
       )
@@ -53,7 +53,7 @@ export default tester(
       expect(await this.page.url()).toEqual(
         'https://www.werstreamt.es/listen/bearbeiten/604612'
       )
-      await this.page.waitForSelector("a[href='/profil/']")
+      await this.page.waitForXPath("//a[@href='/profil/'][text()=' Account']")
       await this.page.$$eval('.customList img', images =>
         images.forEach(image => image.removeAttribute('src'))
       )
