@@ -14,12 +14,12 @@ export default () => {
         |> map(selector => `${selector} a[href^="/listen/bearbeiten/"]`)
         |> join(', ')
     )
-    $listLinks.forEach($link => {
+    for (const $link of $listLinks) {
       const href = $link.getAttribute('href')
 
       const match = href.match(editViewRegex)
       $link.setAttribute('href', `/filme-serien/liste-${match |> last}`)
-    })
+    }
   }
 
   const observer = new MutationObserver(run)
