@@ -44,9 +44,11 @@ export default tester(
         'https://www.werstreamt.es/filme-serien/liste-604612/'
       )
       await this.page.waitForXPath("//a[@href='/profil/'][text()=' Account']")
-      await this.page.$$eval('.results img', images =>
-        images.forEach(image => image.removeAttribute('src'))
-      )
+      await this.page.$$eval('.results img', images => {
+        for (const image of images) {
+          image.removeAttribute('src')
+        }
+      })
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await editButton.click()
       await this.page.waitForNavigation()
@@ -54,9 +56,11 @@ export default tester(
         'https://www.werstreamt.es/listen/bearbeiten/604612'
       )
       await this.page.waitForXPath("//a[@href='/profil/'][text()=' Account']")
-      await this.page.$$eval('.customList img', images =>
-        images.forEach(image => image.removeAttribute('src'))
-      )
+      await this.page.$$eval('.customList img', images => {
+        for (const image of images) {
+          image.removeAttribute('src')
+        }
+      })
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       expect(
         await this.page.$eval('.werstreamtes-list-links-view', el => el.href)
