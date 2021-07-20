@@ -1,3 +1,12 @@
+## [1.0.20](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.19...v1.0.20) (2021-07-20)
+
+
+### Bug Fixes
+
+* lock file maintenance ([8fbaa32](https://github.com/dword-design/werstreamtes-list-links/commit/8fbaa32aec696a16d3ea8a3115df41b29be7620a))
+* replace forEach with for of ([7c71c6c](https://github.com/dword-design/werstreamtes-list-links/commit/7c71c6cdf5894376c2192620ccb023468e0f27f9))
+* update config files ([06d0e33](https://github.com/dword-design/werstreamtes-list-links/commit/06d0e336202cb06a8f85333a061b67b024fdc7ca))
+
 ## [1.0.19](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.18...v1.0.19) (2021-07-15)
 
 
