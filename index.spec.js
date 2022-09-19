@@ -15,7 +15,9 @@ export default tester(
       const loginLink = await this.page.waitForSelector('li.login a')
       await delay(1000)
 
-      const cookieButton = await this.page.$('.cmpboxbtnyes')
+      const cookieButton = await this.page.evaluateHandle(
+        `document.querySelector('#cmpwrapper').shadowRoot.querySelector('.cmpboxbtnyes')`
+      )
       if (cookieButton) {
         await cookieButton.click()
       }
