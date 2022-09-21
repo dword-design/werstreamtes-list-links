@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.21...v1.0.22) (2022-09-21)
+
+
+### Bug Fixes
+
+* lock file maintenance ([b066720](https://github.com/dword-design/werstreamtes-list-links/commit/b066720500a43ba25de1e3b80dcc5a896a720cc8))
+
 ## [1.0.21](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.20...v1.0.21) (2021-08-10)
 
 
