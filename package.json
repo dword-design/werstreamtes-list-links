@@ -24,7 +24,7 @@
     "@dword-design/functions": "^4.0.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^8.0.0",
+    "@dword-design/base": "^10.0.0",
     "@dword-design/base-config-web-extension": "^1.8.0",
     "@dword-design/dotenv-json-extended": "^2.0.3",
     "@dword-design/puppeteer": "^5.0.2",
