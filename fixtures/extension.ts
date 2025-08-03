@@ -14,7 +14,7 @@ export const test = base.extend<{
         `--disable-extensions-except=${pathToExtension}`,
         `--load-extension=${pathToExtension}`,
       ],
-      headless: false,
+      channel: 'chromium',
     });
 
     await use(context);
