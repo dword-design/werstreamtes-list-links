@@ -17,7 +17,7 @@ test('works', async ({ page }) => {
   await loginLink.click();
   await page.locator('input[type=email]').fill(userEmail);
   await page.locator('input[type=password]').fill(userPassword);
-  await page.locator('input[name=action_dologin]').click();
+  await page.locator('input[name=action_doLogin]').click();
   const loginMenu = page.locator('li.login');
   await loginMenu.hover();
   const listsDropdown = loginMenu.locator('.has-dropdown');
@@ -25,7 +25,7 @@ test('works', async ({ page }) => {
   await listsDropdown.getByRole('link', { name: 'Watchlist' }).click();
 
   await expect(page).toHaveURL(
-    'https://www.werstreamt.es/filme-serien/liste-604612',
+    'https://www.werstreamt.es/filme-serien/liste-604612/',
   );
 
   const images = page.locator('.results img');
@@ -57,6 +57,6 @@ test('works', async ({ page }) => {
 
   await expect(page.locator('.werstreamtes-list-links-view')).toHaveAttribute(
     'href',
-    'https://www.werstreamt.es/filme-serien/liste-604612',
+    'https://www.werstreamt.es/filme-serien/liste-604612/',
   );
 });
