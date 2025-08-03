@@ -42,18 +42,10 @@ jobs:
         run: pnpm dw-ci push-changed-files
       - if: github.ref == 'refs/heads/master'
         run: pnpm prepublishOnly
-      - env:
-          FIREFOX_EXTENSION_ID: ${{ secrets.FIREFOX_EXTENSION_ID }}
-        if: github.ref == 'refs/heads/master'
-        run: pnpm prepublishOnly firefox
       - if: github.ref == 'refs/heads/master'
-        run: zip -r ../chrome.zip .
-        working-directory: dist/chrome
+        run: pnpm wxt zip
       - if: github.ref == 'refs/heads/master'
-        run: zip -r ../firefox.zip .
-        working-directory: dist/firefox
-      - if: github.ref == 'refs/heads/master'
-        run: git archive --output=dist/firefox-sources.zip HEAD
+        run: pnpm wxt zip -b firefox
       - env:
           CHROME_CLIENT_ID: ${{ secrets.CHROME_CLIENT_ID }}
           CHROME_CLIENT_SECRET: ${{ secrets.CHROME_CLIENT_SECRET }}
