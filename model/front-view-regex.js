@@ -1,1 +1,0 @@
-export default /^\/.*?\/liste-(\d+)\/?$/
