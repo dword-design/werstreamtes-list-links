@@ -16,7 +16,11 @@ test('works', async ({ page }) => {
   await page.goto('https://werstreamt.es');
   const cookieButton = page.locator('#cmpbox .cmptxt_btn_yes');
   await cookieButton.click();
-  const loginLink = page.locator('li.login a');
+
+  const loginLink = page
+    .getByRole('navigation')
+    .getByRole('link', { name: 'Login' });
+
   await loginLink.click();
   await page.locator('input[type=email]').fill(userEmail);
   await page.locator('input[type=password]').fill(userPassword);
@@ -32,8 +36,22 @@ test('works', async ({ page }) => {
   );
 
   const images = page.locator('.results img');
-  await expect(images.first()).toBeVisible();
-  const ad = page.locator('.content li').first().locator('img');
+
+  const accountLink = page
+    .getByRole('navigation')
+    .getByRole('link', { name: 'Account' });
+
+  await Promise.all([
+    expect(images.first()).toBeVisible(),
+    expect(accountLink).toBeVisible(),
+  ]);
+
+  const ad = page
+    .locator('.content')
+    .getByRole('listitem')
+    .first()
+    .getByRole('img');
+
   await ad.evaluate(el => el.remove());
   await expect(page).toHaveScreenshot();
   await page.locator('.werstreamtes-list-links-edit').click();
@@ -42,7 +60,10 @@ test('works', async ({ page }) => {
     'https://www.werstreamt.es/listen/bearbeiten/604612/',
   );
 
-  const imagesFromEditList = page.locator('.content-list-container img');
+  const imagesFromEditList = page
+    .locator('.content-list-container')
+    .getByRole('img');
+
   await expect(imagesFromEditList.first()).toBeVisible();
   await expect(page).toHaveScreenshot();
 
