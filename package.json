@@ -6,42 +6,43 @@
   "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "base build",
     "checkUnknownFiles": "base checkUnknownFiles",
     "commit": "base commit",
+    "depcheck": "base depcheck",
     "dev": "base dev",
     "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "source": "base source",
     "test": "base test",
-    "test:raw": "base test:raw"
+    "test:raw": "base test:raw",
+    "typecheck": "base typecheck",
+    "verify": "base verify"
   },
   "dependencies": {
-    "@dword-design/functions": "^4.0.0"
+    "endent": "npm:@dword-design/endent@^1.4.7"
   },
   "devDependencies": {
-    "@dword-design/base": "^8.0.0",
-    "@dword-design/base-config-web-extension": "^1.8.0",
-    "@dword-design/dotenv-json-extended": "^2.0.3",
-    "@dword-design/puppeteer": "^5.0.2",
-    "@dword-design/tester": "^2.0.4",
-    "@dword-design/tester-plugin-puppeteer": "^2.1.15",
-    "execa": "^5.1.1"
+    "@dword-design/base": "^15.3.2",
+    "@dword-design/base-config-web-extension": "^4.0.9",
+    "@dword-design/dotenv-json-extended": "^4.0.1",
+    "@playwright/browser-chromium": "^1.54.2",
+    "@playwright/test": "^1.54.2",
+    "execa": "^9.6.0"
   },
+  "peerDependencies": {
+    "@dword-design/wxt-fork": "*"
+  },
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748",
   "engines": {
-    "node": ">=12"
+    "node": ">=20"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "baseConfig": {
-    "name": "@dword-design/web-extension",
-    "startUrl": "https://www.werstreamt.es/filme-serien/liste-411079",
-    "chromeExtensionId": "fjmcbhanepcclaikmmmpaccaahlcchal",
-    "testInContainer": true
   }
 }

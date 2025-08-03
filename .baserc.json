@@ -1,0 +1,10 @@
+{
+  "chromeExtensionId": "fjmcbhanepcclaikmmmpaccaahlcchal",
+  "depcheckConfig": {
+    "ignoreMatches": ["@playwright/browser-chromium"]
+  },
+  "doppler": true,
+  "name": "@dword-design/web-extension",
+  "startUrl": "https://www.werstreamt.es/filme-serien/liste-411079",
+  "testInContainer": true
+}
