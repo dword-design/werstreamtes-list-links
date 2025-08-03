@@ -1,5 +1,4 @@
 {
-  "chromeExtensionId": "fjmcbhanepcclaikmmmpaccaahlcchal",
   "depcheckConfig": {
     "ignoreMatches": ["@playwright/browser-chromium"]
   },
