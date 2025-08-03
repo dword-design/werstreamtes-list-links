@@ -9,10 +9,7 @@ const userEmail = process.env.USER_EMAIL!;
 const userPassword = process.env.USER_PASSWORD!;
 
 test.beforeAll(() =>
-  execaCommand('base prepublishOnly', {
-    env: { NODE_ENV: '' },
-    stdio: 'inherit',
-  }),
+  execaCommand('base build', { env: { NODE_ENV: '' }, stdio: 'inherit' }),
 );
 
 test('works', async ({ page }) => {
