@@ -34,15 +34,15 @@ test('works', async ({ page }) => {
   await page.locator('.werstreamtes-list-links-edit').click();
 
   await expect(page).toHaveURL(
-    'https://www.werstreamt.es/listen/bearbeiten/604612',
+    'https://www.werstreamt.es/listen/bearbeiten/604612/',
   );
 
-  const imagesFromEditList = page.locator('.results img');
+  const imagesFromEditList = page.locator('.content-list-container img');
   await expect(imagesFromEditList.first()).toBeVisible();
   await expect(page).toHaveScreenshot();
 
   await expect(page.locator('.werstreamtes-list-links-view')).toHaveAttribute(
     'href',
-    'https://www.werstreamt.es/filme-serien/liste-604612',
+    '/filme-serien/liste-604612',
   );
 });
