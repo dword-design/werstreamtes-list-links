@@ -1,5 +1,6 @@
 import dotenv from '@dword-design/dotenv-json-extended';
 import { expect } from '@playwright/test';
+import delay from 'delay';
 import { execaCommand } from 'execa';
 
 import { test } from './fixtures/extension';
@@ -65,6 +66,7 @@ test('works', async ({ page }) => {
     .getByRole('img');
 
   await expect(imagesFromEditList.first()).toBeVisible();
+  await delay(500); // There is a strange animation going on and in CI the screenshot had the banner at the bottom duplicated
   await expect(page).toHaveScreenshot();
 
   await expect(page.locator('.werstreamtes-list-links-view')).toHaveAttribute(
