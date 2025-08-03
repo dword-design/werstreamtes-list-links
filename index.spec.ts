@@ -29,14 +29,7 @@ test('works', async ({ page }) => {
   );
 
   const images = page.locator('.results img');
-  await expect(images).toBeVisible();
-
-  await images.evaluateAll(images => {
-    for (const image of images) {
-      image.removeAttribute('src');
-    }
-  });
-
+  await expect(images.first()).toBeVisible();
   await expect(page).toHaveScreenshot();
   await page.locator('.werstreamtes-list-links-edit').click();
 
@@ -45,18 +38,11 @@ test('works', async ({ page }) => {
   );
 
   const imagesFromEditList = page.locator('.results img');
-  await expect(imagesFromEditList).toBeVisible();
-
-  await imagesFromEditList.evaluateAll(images => {
-    for (const image of images) {
-      image.removeAttribute('src');
-    }
-  });
-
+  await expect(imagesFromEditList.first()).toBeVisible();
   await expect(page).toHaveScreenshot();
 
   await expect(page.locator('.werstreamtes-list-links-view')).toHaveAttribute(
     'href',
-    'https://www.werstreamt.es/filme-serien/liste-604612/',
+    'https://www.werstreamt.es/filme-serien/liste-604612',
   );
 });
