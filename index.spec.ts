@@ -7,7 +7,13 @@ import { test } from './fixtures/extension';
 dotenv.config();
 const userEmail = process.env.USER_EMAIL!;
 const userPassword = process.env.USER_PASSWORD!;
-test.beforeAll(() => execaCommand('base prepublishOnly'));
+
+test.beforeAll(() =>
+  execaCommand('base prepublishOnly', {
+    env: { NODE_ENV: '' },
+    stdio: 'inherit',
+  }),
+);
 
 test('works', async ({ page }) => {
   await page.goto('https://werstreamt.es');
@@ -30,11 +36,9 @@ test('works', async ({ page }) => {
 
   const images = page.locator('.results img');
   await expect(images.first()).toBeVisible();
-
-  await expect(page).toHaveScreenshot({
-    mask: [page.locator('.content li').first().locator('img')],
-  });
-
+  const ad = page.locator('.content li').first().locator('img');
+  await ad.evaluate(el => el.remove());
+  await expect(page).toHaveScreenshot();
   await page.locator('.werstreamtes-list-links-edit').click();
 
   await expect(page).toHaveURL(
