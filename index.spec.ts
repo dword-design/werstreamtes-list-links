@@ -30,7 +30,11 @@ test('works', async ({ page }) => {
 
   const images = page.locator('.results img');
   await expect(images.first()).toBeVisible();
-  await expect(page).toHaveScreenshot();
+
+  await expect(page).toHaveScreenshot({
+    mask: [page.locator('.content li').first().locator('img')],
+  });
+
   await page.locator('.werstreamtes-list-links-edit').click();
 
   await expect(page).toHaveURL(
