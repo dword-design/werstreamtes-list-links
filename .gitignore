@@ -1,6 +1,7 @@
 .DS_Store
 /.env.json
 /.nyc_output
+/.stylelintcache
 /.test.env.json
 /.wxt
 /codecov
