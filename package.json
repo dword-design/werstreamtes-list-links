@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^15.3.2",
-    "@dword-design/base-config-web-extension": "^4.0.9",
+    "@dword-design/base-config-web-extension": "^5.0.0",
     "@dword-design/dotenv-json-extended": "^4.0.1",
     "@playwright/browser-chromium": "^1.54.2",
     "@playwright/test": "^1.54.2",
