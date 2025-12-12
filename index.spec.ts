@@ -51,7 +51,7 @@ test('works', async ({ page }) => {
     .locator('.content')
     .getByRole('listitem')
     .first()
-    .getByRole('img');
+    .locator('iframe');
 
   await ad.evaluate(el => el.remove());
   await expect(page).toHaveScreenshot();
