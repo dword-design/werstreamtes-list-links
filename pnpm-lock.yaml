@@ -21,6 +21,9 @@ importers:
       '@dword-design/dotenv-json-extended':
         specifier: ^4.0.1
         version: 4.0.1
+      '@dword-design/playwright-fixture-web-extension':
+        specifier: ^1.0.0
+        version: 1.0.0(@playwright/test@1.57.0)
       '@playwright/browser-chromium':
         specifier: ^1.57.0
         version: 1.57.0
@@ -356,6 +359,12 @@ packages:
   '@dword-design/personal-data@3.0.0':
     resolution: {integrity: sha512-ZC0Wb4O5hQB0016zjut7OMIa/x4ZU40caQHymCQNZIPOE9R54yfWMKfmsU337KPJaXBBWo0d15UhcOzRTJkG6w==}
     engines: {node: '>=20'}
+
+  '@dword-design/playwright-fixture-web-extension@1.0.0':
+    resolution: {integrity: sha512-I8BZwCR41Klv76qq2cj5jg94fOyduc8GJuzXqjwZ/f7mzekTGRlg51FZLYcJiSjjE1URmhps25yESDTcwjuysQ==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@playwright/test': ^1
 
   '@dword-design/plugin-name-to-package-name@0.1.2':
     resolution: {integrity: sha512-kATg/RzRkq/Yv0qNJziPqwAzKstBTzuXnowH4MvAMyqW6C7o5HlgZtik3GzO0kBKCBZBoRswBSvo9AHclOTxfg==}
@@ -6126,6 +6135,10 @@ snapshots:
   '@dword-design/personal-data@3.0.0':
     dependencies:
       endent: '@dword-design/endent@1.4.7'
+
+  '@dword-design/playwright-fixture-web-extension@1.0.0(@playwright/test@1.57.0)':
+    dependencies:
+      '@playwright/test': 1.57.0
 
   '@dword-design/plugin-name-to-package-name@0.1.2':
     dependencies:

@@ -1,9 +1,8 @@
 import dotenv from '@dword-design/dotenv-json-extended';
+import { test } from '@dword-design/playwright-fixture-web-extension';
 import { expect } from '@playwright/test';
 import delay from 'delay';
 import { execaCommand } from 'execa';
-
-import { test } from './fixtures/extension';
 
 dotenv.config();
 const userEmail = process.env.USER_EMAIL!;
