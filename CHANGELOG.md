@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.24...v1.0.25) (2025-12-12)
+
+
+### Bug Fixes
+
+* trigger release ([681adfb](https://github.com/dword-design/werstreamtes-list-links/commit/681adfb821fbf4c95f8cf6737aef319fdc00100b))
+
 ## [1.0.24](https://github.com/dword-design/werstreamtes-list-links/compare/v1.0.23...v1.0.24) (2025-12-12)
 
 
