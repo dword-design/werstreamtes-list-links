@@ -1,6 +1,6 @@
 .DS_Store
 /.env.json
-/.nyc_output
+/.pnpm-store
 /.stylelintcache
 /.test.env.json
 /.wxt
